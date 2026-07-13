@@ -1,0 +1,39 @@
+{
+  "type": "business",
+  "template_version": "1.0",
+  "description": "Template for business blueprints",
+  "fields": {
+    "company_name": {
+      "type": "string",
+      "description": "Company name"
+    },
+    "mission": {
+      "type": "string",
+      "description": "Company mission statement"
+    },
+    "customer": {
+      "type": "string",
+      "description": "Target customer"
+    },
+    "problem": {
+      "type": "string",
+      "description": "Problem addressed"
+    },
+    "solution": {
+      "type": "string",
+      "description": "Solution provided"
+    },
+    "revenue_model": {
+      "type": "string",
+      "description": "Revenue generation model"
+    },
+    "operations": {
+      "type": "array",
+      "description": "Key operations"
+    },
+    "growth_plan": {
+      "type": "array",
+      "description": "Growth strategy steps"
+    }
+  }
+}
