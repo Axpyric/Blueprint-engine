@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "template_version": "1.0",
+  "description": "Template for application blueprints",
+  "fields": {
+    "app_name": {
+      "type": "string",
+      "description": "Application name"
+    },
+    "problem": {
+      "type": "string",
+      "description": "Problem being solved"
+    },
+    "target_users": {
+      "type": "array",
+      "description": "Target user segments"
+    },
+    "features": {
+      "type": "array",
+      "description": "Core features"
+    },
+    "technology": {
+      "type": "array",
+      "description": "Technology stack"
+    },
+    "monetization": {
+      "type": "string",
+      "description": "Monetization strategy"
+    },
+    "deployment": {
+      "type": "string",
+      "description": "Deployment approach"
+    }
+  }
+}
