@@ -1,0 +1,31 @@
+{
+  "type": "workflow",
+  "template_version": "1.0",
+  "description": "Template for workflow automation blueprints",
+  "fields": {
+    "workflow_name": {
+      "type": "string",
+      "description": "Workflow name"
+    },
+    "trigger": {
+      "type": "string",
+      "description": "Workflow trigger condition"
+    },
+    "steps": {
+      "type": "array",
+      "description": "Workflow execution steps"
+    },
+    "inputs": {
+      "type": "array",
+      "description": "Input parameters"
+    },
+    "outputs": {
+      "type": "array",
+      "description": "Output results"
+    },
+    "automation_rules": {
+      "type": "array",
+      "description": "Automation rules and logic"
+    }
+  }
+}
