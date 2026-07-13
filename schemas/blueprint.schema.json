@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Blueprint Engine Schema",
+  "description": "Standard structure for Blueprint Engine projects",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "type",
+    "version",
+    "purpose"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique blueprint identifier"
+    },
+    "title": {
+      "type": "string",
+      "description": "Blueprint title"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "application",
+        "song",
+        "business",
+        "workflow",
+        "agent",
+        "custom"
+      ],
+      "description": "Blueprint type classification"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version"
+    },
+    "purpose": {
+      "type": "string",
+      "description": "Blueprint purpose and goals"
+    },
+    "author": {
+      "type": "string",
+      "description": "Blueprint creator"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Categorization tags"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Blueprint components"
+    },
+    "inputs": {
+      "type": "object",
+      "description": "Input parameters"
+    },
+    "outputs": {
+      "type": "object",
+      "description": "Output specifications"
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "External dependencies"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata"
+    }
+  }
+}
