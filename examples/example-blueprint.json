@@ -1,0 +1,42 @@
+{
+  "id": "bp-001",
+  "title": "Creator Workflow Assistant",
+  "type": "application",
+  "version": "1.0.0",
+  "purpose": "Help creators organize and automate content workflows",
+  "author": "Blueprint Engine",
+  "tags": [
+    "ai",
+    "creator",
+    "automation"
+  ],
+  "components": [
+    {
+      "name": "AI Generator",
+      "purpose": "Creates structured outputs"
+    },
+    {
+      "name": "Workflow Manager",
+      "purpose": "Organizes content pipeline"
+    }
+  ],
+  "inputs": {
+    "idea": "User concept or creative direction",
+    "style": "Desired aesthetic or tone",
+    "constraints": "Project limitations and requirements"
+  },
+  "outputs": {
+    "blueprint": "Generated project plan",
+    "workflow": "Automated content workflow",
+    "assets": "Generated templates and resources"
+  },
+  "dependencies": [
+    "ai-service",
+    "storage-engine"
+  ],
+  "metadata": {
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z",
+    "status": "active"
+  }
+}
