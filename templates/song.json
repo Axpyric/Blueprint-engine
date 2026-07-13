@@ -1,0 +1,50 @@
+{
+  "type": "song",
+  "template_version": "1.0",
+  "description": "Template for song composition blueprints",
+  "fields": {
+    "title": {
+      "type": "string",
+      "description": "Song title"
+    },
+    "artist": {
+      "type": "string",
+      "description": "Artist name"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Music genre"
+    },
+    "bpm": {
+      "type": "integer",
+      "description": "Beats per minute"
+    },
+    "key": {
+      "type": "string",
+      "description": "Musical key"
+    },
+    "mood": {
+      "type": "string",
+      "description": "Song mood/vibe"
+    },
+    "structure": {
+      "type": "array",
+      "default": [
+        "intro",
+        "verse",
+        "hook",
+        "bridge",
+        "outro"
+      ],
+      "description": "Song structure sections"
+    },
+    "production_notes": {
+      "type": "array",
+      "description": "Production guidelines"
+    },
+    "assets": {
+      "type": "array",
+      "description": "Audio/media assets"
+    }
+  }
+}
